@@ -1,5 +1,3 @@
-#ok{
-    -webkit-clip-path: polygon(79% 0, 76% 0, 97% 100%, 100% 98%);
-    clip-path: polygon(79% 0, 76% 0, 97% 100%, 100% 98%);
-background-color: black;
-}
+.no-file-text {
+    padding-top: 1.15rem; /* Ajustement du style pour cacher le texte */
+  }
