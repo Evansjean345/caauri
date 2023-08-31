@@ -24,7 +24,7 @@ export default function Three() {
       </div>
       {/* button section computer version */}
       <div className="lg:pl-24 lg:mt-24 sm:px-12 px-6">
-        <span className="text-3xl font-thin sm:font-normal pl-2">
+        <span className="text-3xl text-black font-thin sm:font-normal pl-2">
           Catégories
         </span>
         <ul className="lg:flex space-x-6 mt-3 list-outside hidden">
@@ -52,7 +52,9 @@ export default function Three() {
       </div>
       {/* button presentation computer version */}
       <div className="pl-24 lg:mt-28 lg:block hidden">
-        <span className="lg:text-5xl md:text-3xl pl-2">TOUTES LES OEUVRES</span>
+        <span className="lg:text-5xl md:text-3xl pl-2 text-black">
+          TOUTES LES OEUVRES
+        </span>
       </div>
       <br className="hidden sm:block" />
       {/* button section mobile version */}
@@ -60,7 +62,7 @@ export default function Three() {
         <details className="collapse rounded-none">
           <summary className="collapse-title  relative text-xl flex justify-between font-medium">
             <div className="flex w-full justify-between">
-              <span className="text-base">Tous les projets</span>
+              <span className="text-base text-black">Tous les projets</span>
               <span className="absolute right-2 bottom-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,18 +114,18 @@ export default function Three() {
             </li>
           </ul>
 
-          <span className="sm:mt-10 text-xl sm:text-4xl font-semibold">
+          <span className="sm:mt-10 text-xl sm:text-4xl text-black font-semibold">
             Lorem ipsum
           </span>
 
-          <p className="sm:mt-12 mt-2 text-sm sm:text-lg font-medium">
+          <p className="sm:mt-12 mt-2 text-sm sm:text-lg font-medium text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
             voluptatum aliquam! Eius quis modi, non accusamus voluptas
             consectetur sapiente. Ex dolor aliquam quo itaque facilis corporis
             id aspernatur magnam perspiciatis.
           </p>
 
-          <ul className="list-disc hidden sm:flex flex-col space-y-1 list-inside mt-12 pl-4 text-3xl font-light">
+          <ul className="list-disc hidden sm:flex flex-col space-y-1 text-black list-inside mt-12 pl-4 text-3xl font-light">
             <li>Conception d'applications mobiles</li>
             <li>Conception d'applications Web</li>
             <li>Conception de la page de destination</li>
@@ -134,7 +136,7 @@ export default function Three() {
           </ul>
 
           <div className="sm:flex hidden mt-20 justify-start space-x-2">
-            <span className="text-3xl">VOIR L'ETUDE DE CAS</span>
+            <span className="text-3xl text-black">VOIR L'ETUDE DE CAS</span>
             <img src="/icon/arrow_empty.svg" alt="" />
           </div>
         </div>
@@ -142,7 +144,7 @@ export default function Three() {
           <img
             src="/images/img_tec.png"
             alt=""
-            className="max-w-full h-auto hover:scale-[-1] z-10 ml-auto mr-auto block"
+            className="max-w-full h-auto z-10 ml-auto mr-auto block"
           />
           <div className="flex top-0 left-1 sm:left-24 md:left-36 lg:hidden z-20 absolute">
             <ul className="flex space-x-2 sm:space-x-6 mt-3  list-outside">
@@ -189,18 +191,18 @@ export default function Three() {
             </li>
           </ul>
 
-          <span className="sm:mt-10 text-xl sm:text-4xl font-semibold">
+          <span className="sm:mt-10 text-xl sm:text-4xl text-black font-semibold">
             Lorem ipsum
           </span>
 
-          <p className="sm:mt-12 mt-2 text-sm sm:text-lg font-medium">
+          <p className="sm:mt-12 mt-2 text-sm sm:text-lg font-medium text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
             voluptatum aliquam! Eius quis modi, non accusamus voluptas
             consectetur sapiente. Ex dolor aliquam quo itaque facilis corporis
             id aspernatur magnam perspiciatis.
           </p>
 
-          <ul className="list-disc hidden sm:flex flex-col space-y-1 list-inside mt-12 pl-4 text-3xl font-light">
+          <ul className="list-disc hidden sm:flex flex-col space-y-1 text-black list-inside mt-12 pl-4 text-3xl font-light">
             <li>Conception d'applications mobiles</li>
             <li>Conception d'applications Web</li>
             <li>Conception de la page de destination</li>
@@ -211,7 +213,7 @@ export default function Three() {
           </ul>
 
           <div className="sm:flex hidden mt-20 justify-start space-x-2">
-            <span className="text-3xl">VOIR L'ETUDE DE CAS</span>
+            <span className="text-3xl text-black">VOIR L'ETUDE DE CAS</span>
             <img src="/icon/arrow_empty.svg" alt="" />
           </div>
         </div>
@@ -219,7 +221,7 @@ export default function Three() {
           <img
             src="/images/img_tec.png"
             alt=""
-            className="max-w-full h-auto hover:scale-[-1] z-10 ml-auto mr-auto block"
+            className="max-w-full h-auto z-10 ml-auto mr-auto block"
           />
           <div className="flex top-0 left-1 sm:left-24 md:left-36 lg:hidden z-20 absolute">
             <ul className="flex space-x-2 sm:space-x-6 mt-3  list-outside">
@@ -266,18 +268,18 @@ export default function Three() {
             </li>
           </ul>
 
-          <span className="sm:mt-10 text-xl sm:text-4xl font-semibold">
+          <span className="sm:mt-10 text-xl sm:text-4xl text-black font-semibold">
             Lorem ipsum
           </span>
 
-          <p className="sm:mt-12 mt-2 text-sm sm:text-lg font-medium">
+          <p className="sm:mt-12 mt-2 text-sm sm:text-lg font-medium text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
             voluptatum aliquam! Eius quis modi, non accusamus voluptas
             consectetur sapiente. Ex dolor aliquam quo itaque facilis corporis
             id aspernatur magnam perspiciatis.
           </p>
 
-          <ul className="list-disc hidden sm:flex flex-col space-y-1 list-inside mt-12 pl-4 text-3xl font-light">
+          <ul className="list-disc hidden sm:flex flex-col space-y-1 text-black list-inside mt-12 pl-4 text-3xl font-light">
             <li>Conception d'applications mobiles</li>
             <li>Conception d'applications Web</li>
             <li>Conception de la page de destination</li>
@@ -288,7 +290,7 @@ export default function Three() {
           </ul>
 
           <div className="sm:flex hidden mt-20 justify-start space-x-2">
-            <span className="text-3xl">VOIR L'ETUDE DE CAS</span>
+            <span className="text-3xl text-black">VOIR L'ETUDE DE CAS</span>
             <img src="/icon/arrow_empty.svg" alt="" />
           </div>
         </div>
@@ -296,7 +298,7 @@ export default function Three() {
           <img
             src="/images/img_tec.png"
             alt=""
-            className="max-w-full h-auto hover:scale-[-1] z-10 ml-auto mr-auto block"
+            className="max-w-full h-auto z-10 ml-auto mr-auto block"
           />
           <div className="flex top-0 left-1 sm:left-24 md:left-36 lg:hidden z-20 absolute">
             <ul className="flex space-x-2 sm:space-x-6 mt-3  list-outside">
@@ -343,18 +345,18 @@ export default function Three() {
             </li>
           </ul>
 
-          <span className="sm:mt-10 text-xl sm:text-4xl font-semibold">
+          <span className="sm:mt-10 text-xl sm:text-4xl text-black font-semibold">
             Lorem ipsum
           </span>
 
-          <p className="sm:mt-12 mt-2 text-sm sm:text-lg font-medium">
+          <p className="sm:mt-12 mt-2 text-sm sm:text-lg font-medium text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
             voluptatum aliquam! Eius quis modi, non accusamus voluptas
             consectetur sapiente. Ex dolor aliquam quo itaque facilis corporis
             id aspernatur magnam perspiciatis.
           </p>
 
-          <ul className="list-disc hidden sm:flex flex-col space-y-1 list-inside mt-12 pl-4 text-3xl font-light">
+          <ul className="list-disc hidden sm:flex flex-col space-y-1 text-black list-inside mt-12 pl-4 text-3xl font-light">
             <li>Conception d'applications mobiles</li>
             <li>Conception d'applications Web</li>
             <li>Conception de la page de destination</li>
@@ -365,7 +367,7 @@ export default function Three() {
           </ul>
 
           <div className="sm:flex hidden mt-20 justify-start space-x-2">
-            <span className="text-3xl">VOIR L'ETUDE DE CAS</span>
+            <span className="text-3xl text-black">VOIR L'ETUDE DE CAS</span>
             <img src="/icon/arrow_empty.svg" alt="" />
           </div>
         </div>
@@ -373,7 +375,7 @@ export default function Three() {
           <img
             src="/images/img_tec.png"
             alt=""
-            className="max-w-full h-auto hover:scale-[-1] z-10 ml-auto mr-auto block"
+            className="max-w-full h-auto z-10 ml-auto mr-auto block"
           />
           <div className="flex top-0 left-1 sm:left-24 md:left-36 lg:hidden z-20 absolute">
             <ul className="flex space-x-2 sm:space-x-6 mt-3  list-outside">
