@@ -3,27 +3,16 @@ import { Input } from "@material-tailwind/react";
 import Footer from "./Footer";
 
 export default function Contact() {
-  const handleFileChange = (event) => {
-    const input = event.target;
-    const labelText = "Aucun fichier choisi";
-    const labelElement = input.previousElementSibling;
-
-    if (input.files && input.files.length > 0) {
-      labelElement.textContent = ""; // Masquer le texte
-    } else {
-      labelElement.textContent = labelText;
-    }
-  };
   return (
     <div>
       {/* First Section */}
-      <div className="flex flex-col justify-start space-y-2 mt-20 pl-12 items-start">
-        <span className="text-8xl">Nous joindre</span>
-        <span className="text-3xl">Prenons un café</span>
+      <div className="flex flex-col justify-start space-y-4 sm:space-y-2 pt-40 pl-12 items-start">
+        <span className="text-5xl  sm:text-6xl  md:text-8xl">Nous joindre</span>
+        <span className="text-xl md:text-3xl">Prenons un café</span>
       </div>
       {/* Contact */}
-      <div className="flex w-full mt-44 pl-12 pb-44">
-        <div className="flex flex-col space-y-8 w-1/2 justify-normal items-start">
+      <div className="flex lg:flex-row flex-col w-full mt-12 lg:mt-44 pl-12 pb-44 lg:pr-0 pr-12">
+        <div className="flex flex-col mt-32 lg:mt-0 lg:order-1 order-2 space-y-8 w-full lg:w-1/2 justify-normal items-start">
           <div className="flex flex-col text-lg">
             <span>Nous envoyez un e-mail :</span>
             <span className="font-medium">Contact@caauri.com</span>
@@ -39,7 +28,7 @@ export default function Contact() {
             <span className="font-medium">(+225) 07 08 02 80 80</span>
           </div>
         </div>
-        <div className="w-1/2 pr-16">
+        <div className="lg:w-1/2 w-full lg:order-2 order-1 pr-0 lg:pr-16">
           <form action="" method="post" className="flex flex-col space-y-12">
             <div>
               <label htmlFor="" className="font-medium text-lg">

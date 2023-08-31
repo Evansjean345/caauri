@@ -68,7 +68,7 @@ export default function Footer() {
           &copy;{" "}
           <span className="font-thin text-xs">2023 Caauri Consulting</span>{" "}
         </div>
-        <div className="flex justify-end font-thin text-xs gap-x-6">
+        <div className="flex justify-end font-thin text-xs mt-[6.5px] sm:mt-0 gap-x-6">
           <span>Terms & Services</span>
           <span>Privacy policy</span>
         </div>

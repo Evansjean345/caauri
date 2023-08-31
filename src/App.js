@@ -48,11 +48,11 @@ function App() {
     }, 3000);
   }, []);
   return loader ? (
-    <div className="h-[100vh] flex items-center justify-center">
+    <div className="h-[100vh] bg-white flex items-center justify-center">
       <img src="/images/logo.png" alt="" className="h-64 animate-bounce" />
     </div>
   ) : (
-    <div className="App m-0 p-0">
+    <div className="App m-0 p-0 bg-white">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/anime" element={<Anime_page />} />
