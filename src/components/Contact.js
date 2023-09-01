@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="bg-white text-black">
       {/* First Section */}
       <div className="flex flex-col justify-start space-y-4 sm:space-y-2 pt-40 pl-12 items-start">
         <span className="text-5xl  sm:text-6xl  md:text-8xl">Nous joindre</span>

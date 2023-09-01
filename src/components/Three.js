@@ -1,17 +1,10 @@
 import React from "react";
 import Footer from "./Footer";
-import {
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
-  Button,
-} from "@material-tailwind/react";
 import Prefooter from "./Prefooter";
 
 export default function Three() {
   return (
-    <div>
+    <div className="bg-white text-black">
       {/* Heading */}
       <div className="flex justify-center text-center text-5xl w-full px-6 sm:px-0 lg:text-8xl py-32 flex-col items-center">
         <p>
@@ -95,7 +88,7 @@ export default function Three() {
         <div className="border border-black"></div>
       </div>
       <div className="w-full sm:px-12 px-6 lg:px-24 flex lg:flex-row flex-col">
-        <div className="w-full lg:order-1 order-2 lg:w-1/2 flex flex-col mt-8 bg-red-50">
+        <div className="w-full lg:order-1 order-2 lg:w-1/2 flex flex-col mt-8 bg-white">
           <ul className="lg:flex space-x-6 mt-3 hidden list-outside">
             <li>
               <div className="border-black font-medium text-black border w-[110px] flex items-center justify-center h-[40px] rounded-full text-base">
@@ -114,7 +107,7 @@ export default function Three() {
             </li>
           </ul>
 
-          <span className="sm:mt-10 text-xl sm:text-4xl text-black font-semibold">
+          <span className="sm:mt-10 text-xl sm:text-4xl  text-black font-semibold">
             Lorem ipsum
           </span>
 
@@ -172,7 +165,7 @@ export default function Three() {
         <div className="border border-black"></div>
       </div>
       <div className="w-full sm:px-12 px-6 lg:px-24 flex lg:flex-row flex-col">
-        <div className="w-full lg:order-1 order-2 lg:w-1/2 flex flex-col mt-8 bg-red-50">
+        <div className="w-full lg:order-1 order-2 lg:w-1/2 flex flex-col mt-8 bg-white">
           <ul className="lg:flex space-x-6 mt-3 hidden list-outside">
             <li>
               <div className="border-black font-medium text-black border w-[110px] flex items-center justify-center h-[40px] rounded-full text-base">
@@ -249,7 +242,7 @@ export default function Three() {
         <div className="border border-black"></div>
       </div>
       <div className="w-full sm:px-12 px-6 lg:px-24 flex lg:flex-row flex-col">
-        <div className="w-full lg:order-1 order-2 lg:w-1/2 flex flex-col mt-8 bg-red-50">
+        <div className="w-full lg:order-1 order-2 lg:w-1/2 flex flex-col mt-8 bg-white">
           <ul className="lg:flex space-x-6 mt-3 hidden list-outside">
             <li>
               <div className="border-black font-medium text-black border w-[110px] flex items-center justify-center h-[40px] rounded-full text-base">
@@ -326,7 +319,7 @@ export default function Three() {
         <div className="border border-black"></div>
       </div>
       <div className="w-full sm:px-12 px-6 lg:px-24 flex lg:flex-row flex-col">
-        <div className="w-full lg:order-1 order-2 lg:w-1/2 flex flex-col mt-8 bg-red-50">
+        <div className="w-full lg:order-1 order-2 lg:w-1/2 flex flex-col mt-8 bg-white">
           <ul className="lg:flex space-x-6 mt-3 hidden list-outside">
             <li>
               <div className="border-black font-medium text-black border w-[110px] flex items-center justify-center h-[40px] rounded-full text-base">

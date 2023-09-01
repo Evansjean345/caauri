@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 export default function Six() {
   return (
-    <div>
+    <div className="bg-white text-black">
       {/* first section */}
       <div className="mt-24">
         <div className="flex justify-center px-24 pt-32  relative">

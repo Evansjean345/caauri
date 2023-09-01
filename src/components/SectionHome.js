@@ -14,7 +14,7 @@ export default function SectionHome() {
   return (
     <div>
       <Navbar onMenuChange={handleMenuChange} />
-      <div className={menu ? "" : "blur-[7.5px]"}>
+      <div className={menu ? "bg-white text-black" : "blur-[7.5px] bg-white text-black"}>
         {/* Acceuil */}
         <div
           className={"flex w-full flex-shrink pt-64"}

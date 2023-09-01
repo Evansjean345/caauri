@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Prefooter() {
   return (
-    <div className="w-full mt-32 sm:px-0 px-2 pb-32 flex items-center justify-center flex-col">
+    <div className="w-full mt-32 bg-white text-black sm:px-0 px-2 pb-32 flex items-center justify-center flex-col">
       <span className="2xl:text-6xl sm:text-4xl text-2xl font-semibold sm:font-meduim text-center">
         Débloquez votre prochaine étape de
         <br className="sm:block hidden" />

@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 export default function Seven() {
   return (
-    <div>
+    <div className="bg-white text-black">
       {/*Acceuil */}
       <div className="flex w-full mt-32">
         <div className="text-7xl w-1/2 pl-2 flex justify-start ">

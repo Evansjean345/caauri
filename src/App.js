@@ -11,7 +11,6 @@ import Page_six from "./pages/Page_six";
 import Page_three from "./pages/Page_three";
 import Page_two from "./pages/Page_two";
 import Page_Seven from "./pages/Page_Seven";
-import Contact from "./components/Contact";
 import Contact_page from "./pages/Contact_page";
 // ..
 AOS.init();

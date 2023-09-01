@@ -9,7 +9,7 @@ const styles = {
 
 export default function Two() {
   return (
-    <div>
+    <div className="bg-white text-black">
       {/* First section */}
       <div className="justify-center flex flex-col">
         <span className="text-7xl mt-16 w-full font-meduim bg-red-50 pb-12  flex justify-center">
