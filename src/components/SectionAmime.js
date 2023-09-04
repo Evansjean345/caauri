@@ -155,7 +155,7 @@ export default function SectionAmime() {
           <br />
           <div className="text-[#C52127] font-bold flex-col flex w-full justify-end text-end items-end leading-none px-16">
             <span>2019</span>
-            <span className="text-black font-normal">
+            <span className="text-black text-xs font-bold sm:text-base sm:font-normal">
               creation de caauri consulting
             </span>
           </div>
@@ -169,7 +169,7 @@ export default function SectionAmime() {
           </div>
           <div className="text-[#C52127] font-bold flex-col flex w-full justify-end text-end items-end leading-none px-16">
             <span>2019</span>
-            <span className="text-black font-normal">
+            <span className="text-black text-xs font-bold sm:text-base sm:font-normal">
               creation de caauri consulting
             </span>
           </div>
@@ -243,11 +243,11 @@ export default function SectionAmime() {
         <div className="w-[38%] flex flex-col">
           <div className="text-[#C52127] font-bold flex-col  h-[97px] relative flex justify-end items-start leading-none px-4">
             <span>1990</span>
-            <span className="font-normal text-black">création d'internet</span>
+            <span className="text-black text-xs font-bold sm:text-base sm:font-normal">création d'internet</span>
           </div>
           <div className=" text-[#C52127] font-bold flex-col justify-end flex h-[365px] items-start leading-none px-4">
             <span>1990</span>
-            <span className="font-normal text-black">création d'internet</span>
+            <span className="text-black text-xs font-bold sm:text-base sm:font-normal">création d'internet</span>
           </div>
           {/* logo_caauri */}
           <div className="flex-col flex h-[700px]  items-center justify-end">
@@ -262,7 +262,7 @@ export default function SectionAmime() {
               <div className="w-full flex items-end justify-end md:w-[65%] lg:w-[53%] xl:w-[35%]">
                 2019
               </div>
-              <span className="text-black font-normal">
+              <span className="text-black text-xs font-bold sm:text-base sm:font-normal">
                 création de caauri consulting
               </span>
             </div>
@@ -274,9 +274,9 @@ export default function SectionAmime() {
               className="max-w-full h-full ml-auto mr-auto block"
             />
           </div>
-          <div className="text-[#C52127] font-bold flex-col h-[750px] flex items-start justify-end leading-none px-12">
+          <div className="text-[#C52127] font-bold flex-col h-[750px] flex items-start justify-end leading-none px-16 sm:px-12">
             <span>1990</span>
-            <span className="font-normal text-black">création d'internet</span>
+            <span className="text-black text-xs font-bold sm:text-base sm:font-normal">création d'internet</span>
           </div>
           {/* iPad text */}
           <div className=" z-20 absolute text-[#FF9A62] top-[80%] left-[60%] text-5xl mr-32 font-thin">

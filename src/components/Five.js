@@ -29,7 +29,7 @@ export default function Five() {
             alt=""
             className="max-w-full h-auto z-10 ml-auto mr-auto block"
           />
-          <div className="absolute flex flex-col left-2 sm:left-24 top-0 sm:top-12">
+          <div className="absolute flex flex-col left-5 sm:left-24 top-0 sm:top-12">
             <span className=" sm:text-4xl  text-white z-20">KMS EXPRESS</span>
             <span className="sm:text-3xl mt-2 text-white z-20">
               13/12/2023 &nbsp; |Contenu | il y a 1 min
