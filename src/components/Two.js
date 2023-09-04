@@ -242,52 +242,47 @@ export default function Two() {
         </div>
       </div>
       {/* Section 4 */}
-      {/*
-    
-       <div className="w-full flex flex-col items-start justify-start mt-20 pl-20">
-        <span className="text-5xl font-bold">Event pro</span>
-        <p className="flex justify-start items-start text-start mt-8 w-[450px] bg-red-50 text-xl">
+      <div className="w-full h-[70vh] bg-gradient-to-r from-black  sm:h-[70vh] flex flex-col items-start justify-start sm:mt-44 mt-20 px-8 sm:px-0 sm:pl-20">
+        <span className="sm:text-5xl text-3xl font-bold pt-12">Event pro</span>
+        <p className="flex justify-start items-start text-start mt-8 sm:w-[450px] text-white text-sm sm:text-xl">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
           provident vero suscipit perspiciatis nesciunt nam? Repellendus dolorum
           architecto eius minus blanditiis exercitationem, laudantium qui ullam
           cum veniam, id magnam similique?
         </p>
-        <ul className="flex mt-8">
+        <ul className="flex mt-8 flex-col sm:flex-row">
           <li>
             <div className="flex space-x-2">
-              <div className="w-[10px] h-[10px] mt-2 rounded-[100px] bg-black"></div>
-              <span>Event Corporate</span>
+              <div className="sm:w-[10px] sm:h-[10px] h-[7px] w-[7px] mt-2 rounded-[100px] bg-white"></div>
+              <span className="text-white">Event Corporate</span>
             </div>
-            <span className="text-xs mt-2 flex items-start justify-start w-96 bg-red-200">
+            <span className="text-xs mt-2 flex items-start justify-start sm:w-96 text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates dolores laudantium accusamus dolor itaque placeat ab
             </span>
           </li>
           <li>
             <div className="flex space-x-2">
-              <div className="w-[10px] h-[10px] mt-2 rounded-[100px] bg-black"></div>
-              <span>Event Corporate</span>
+              <div className="sm:w-[10px] sm:h-[10px] h-[7px] w-[7px] mt-2 rounded-[100px] bg-white"></div>
+              <span className="text-white">Event Corporate</span>
             </div>
-            <span className="text-xs mt-2 flex items-start justify-start w-96 bg-red-200">
+            <span className="text-xs mt-2 flex items-start justify-start sm:w-96 text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates dolores laudantium accusamus dolor itaque placeat ab
             </span>
           </li>
           <li>
             <div className="flex space-x-2">
-              <div className="w-[10px] h-[10px] mt-2 rounded-[100px] bg-black"></div>
-              <span>Event Corporate</span>
+              <div className="sm:w-[10px] sm:h-[10px] h-[7px] w-[7px] mt-2 rounded-[100px] bg-white"></div>
+              <span className="text-white">Event Corporate</span>
             </div>
-            <span className="text-xs mt-2 flex items-start justify-start w-96 bg-red-200">
+            <span className="text-xs mt-2 flex items-start justify-start sm:w-96 text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates dolores laudantium accusamus dolor itaque placeat ab
             </span>
           </li>
         </ul>
       </div>
-      <div className="flex justify-center items-center flex-col w-full mt-20">
-        <img src="/icon/line.svg" alt="" className="w-1 h-44" />
-      </div> */}
       {/* Pub */}
       <Prefooter />
       <Footer />

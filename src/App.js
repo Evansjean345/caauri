@@ -47,7 +47,7 @@ function App() {
     }, 3000);
   }, []);
   return loader ? (
-    <div className="h-[100vh] bg-white flex items-center justify-center">
+    <div className="h-[100vh] bg-black flex items-center justify-center">
       <img src="/images/logo.png" alt="" className="h-64 animate-bounce" />
     </div>
   ) : (

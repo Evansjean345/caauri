@@ -3,6 +3,8 @@ import Navbar from "../Navbar";
 import Footer from "./Footer";
 import "../style.css";
 import Prefooter from "./Prefooter";
+import "../style.css";
+import gsap from "gsap";
 
 export default function SectionHome() {
   const [menu, setMenu] = useState(true);
@@ -11,17 +13,35 @@ export default function SectionHome() {
     setMenu(newMenuValue);
   };
 
+  const elements = useRef([]);
+
+  useEffect(() => {
+    gsap.set(elements.current, { opacity: 0 });
+
+    const timeline = gsap.timeline({ repeat: -1 });
+
+    elements.current.forEach((element, index) => {
+      timeline
+        .to(element, { opacity: 1, duration: 4 })
+        .to(element, { opacity: 0, duration: 2 });
+    });
+  }, []);
+
   return (
     <div>
       <Navbar onMenuChange={handleMenuChange} />
-      <div className={menu ? "bg-white text-black" : "blur-[7.5px] bg-white text-black"}>
+      <div
+        className={
+          menu ? "bg-white text-black" : "blur-[7.5px] bg-white text-black"
+        }
+      >
         {/* Acceuil */}
         <div
-          className={"flex w-full flex-shrink pt-64"}
+          className={"flex w-full flex-shrink pt-32 sm:pt-64"}
           id="caauri_home_section"
         >
           <div className="caauri_div_home w-[60%] flex flex-col justify-center pl-6 lg:pl-6 md:pl-12  2xl:pl-28 bg-white">
-            <p className="xl:font-semibold font-bold text-3xl  sm:text-4xl xl:text-7xl xl:leading-[85px]">
+            <p className="xl:font-semibold font-bold text-4xl md:text-6xl  sm:text-5xl xl:text-7xl xl:leading-[85px]">
               Une image de marque
               <br />
               qui attire réellement
@@ -30,7 +50,7 @@ export default function SectionHome() {
             </p>
             {/* Remove div */}
             <div className="remove_div">
-              <p className="mt-8">
+              <p className="mt-8 text-xs sm:text-base">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                 aspernatur consequatur blanditiis accusamus fugit iste
                 laboriosam quis? Beatae quidem accusantium ut id voluptas velit
@@ -47,24 +67,49 @@ export default function SectionHome() {
             </div>
           </div>
           <div
-            className="caauri_div_home w-[40%] flex justify-center  relative"
+            className="caauri_div_home w-[40%] h-[280px] sm:h-full  flex justify-center  relative"
             id="caauri_home_animation"
           >
             <img
-              src="/logo/caauri_ide.jpg"
+              src="/logo/new_logo.png"
               alt=""
               id="logo_wide"
-              className="md:h-[729px] h-[400px] w-[390px]"
+              className="md:h-[729px] h-[400px] w-[390px] hidden sm:block"
             />
             <img
               src="/logo/caauri_white.png"
               alt=""
-              className="2xl:h-[400px] h-[300px]  w-[200px] absolute top-12 md:top-[235px]"
+              className="anime_text 2xl:h-[400px] sm:h-[300px] h-[180px]   sm:w-[200px] absolute top-16 md:top-[235px]"
+              ref={(el) => elements.current.push(el)}
             />
+            <span
+              className="anime_text text-white text-center text-4xl sm:text-6xl font-bold absolute top-24 block sm:top-[295px]"
+              ref={(el) => elements.current.push(el)}
+            >
+              LANCE TON
+              <br />
+              CAAURI
+            </span>
+            <span
+              className="anime_text text-white text-center text-4xl sm:text-6xl font-bold absolute top-24 block sm:top-[295px]"
+              ref={(el) => elements.current.push(el)}
+            >
+              LANCE TON
+              <br />
+              BUSINESS
+            </span>
+            <span
+              className="anime_text text-white text-center text-4xl sm:text-6xl font-bold absolute top-24 block sm:top-[295px]"
+              ref={(el) => elements.current.push(el)}
+            >
+              LANCE TON
+              <br />
+              AFFAIRE
+            </span>
           </div>
           {/* Visible_div */}
           <div className="visible_div hidden  px-8">
-            <p className="mt-8">
+            <p className="mt-8 text-xs sm:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               aspernatur consequatur blanditiis accusamus fugit iste laboriosam
               quis? Beatae quidem accusantium ut id voluptas velit fuga
