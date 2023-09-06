@@ -6,7 +6,7 @@ export default function Prefooter() {
       <span
         data-aos="fade-up"
         data-aos-easing="linear"
-        data-aos-duration="2000"
+        data-aos-duration="2500"
         className="2xl:text-6xl sm:text-4xl text-2xl font-semibold sm:font-meduim text-center"
       >
         Débloquez votre prochaine étape de
@@ -16,7 +16,7 @@ export default function Prefooter() {
       <span
         data-aos="fade-up"
         data-aos-easing="linear"
-        data-aos-duration="2200"
+        data-aos-duration="3000"
         className="lg:text-2xl sm:text-xl font-normal mt-12 text-center"
       >
         Nous utilisons la statégie , la créativité et l'ingénierie pour fournir
@@ -31,7 +31,7 @@ export default function Prefooter() {
         <div
           data-aos="fade-up"
           data-aos-easing="linear"
-          data-aos-duration="2300"
+          data-aos-duration="3000"
           className="mt-5 sm:font-medium cursor-pointer  flex gap-5 hover:gap-0 py-4 hover:flex hover:items-center hover:justify-center hover:bg-black  transition-all px-2   hover:text-white hover:rounded-l-full hover:rounded-r-full"
         >
           <div>Discutons</div>

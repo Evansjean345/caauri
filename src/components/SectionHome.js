@@ -107,7 +107,7 @@ export default function SectionHome() {
 
   return (
     <div>
-      <div className="bg-white text-black px-2 sm:px-0">
+      <div className="bg-white text-black">
         {/* Acceuil */}
         <div
           className={"flex w-full flex-shrink pt-32 lg:pt-20"}

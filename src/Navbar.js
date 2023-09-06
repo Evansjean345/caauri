@@ -12,7 +12,7 @@ export default function Navbar({ onMenuChange }) {
         backdropFilter: "blur(7.5px)",
         background: " rgba(255, 255, 255, 0.20)",
       }}
-      className="fixed w-full z-50 "
+      className="fixed w-full z-50 text-black "
     >
       <div className="w-full flex z-50 justify-between">
         <div className="w-1/2">
@@ -121,7 +121,7 @@ export default function Navbar({ onMenuChange }) {
             </li>
           </ul>
         </div>
-        <div className="bg-white pl-8 sm:pl-0 mt-20 flex w-full">
+        <div className="bg-white pl-8 sm:pl-0 mt-16 sm:mt-20 flex w-full">
           <div className="w-1/2 flex sm:justify-end flex-col justify-start   sm:items-center">
             <span>
               <div className="mt-8 cursor-pointer flex w-[200px] gap-1 py-4 hover:flex hover:items-center hover:justify-center hover:gap-0 hover:bg-black  transition-all px-2   hover:text-white hover:rounded-l-full hover:rounded-r-full">
