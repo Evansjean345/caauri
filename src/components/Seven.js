@@ -20,12 +20,22 @@ export default function Seven() {
     <div className="bg-white text-black">
       {/*Acceuil */}
       <div className="flex sm:flex-row flex-col w-full pt-32">
-        <div className="sm:text-7xl text-4xl sm:w-1/2 pl-8 sm:pl-2 flex justify-start ">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="sm:text-7xl text-4xl sm:w-1/2 pl-8 sm:pl-10 flex justify-start "
+        >
           Caarrières Chez
           <br />
           Caauri
         </div>
-        <div className="sm:w-1/2 sm:text-2xl font-medium mt-4 sm:mt-20 pl-8 sm:pl-16 flex sm:justify-center">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="2000"
+          className="sm:w-1/2 sm:text-2xl font-medium mt-4 sm:mt-20 pl-8 sm:pl-16 flex sm:justify-center"
+        >
           Appel à tous les acteurs du changement
           <br />
           Caauri recrute !
@@ -34,32 +44,42 @@ export default function Seven() {
       {/* Section recrutement */}
       <div>
         <div className="flex justify-center items-center flex-col mt-32 space-y-2">
-          <span className="sm:text-2xl font-medium">Nous embauchons</span>
+          <span
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2500"
+            className="sm:text-2xl font-medium"
+          >
+            Nous embauchons
+          </span>
           <span>
             <img
               src="/icon/arrow_circle.svg"
               alt=""
               className="sm:h-7 sm:w-7 h-6 w-6"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="3000"
             />
           </span>
           {/* Carreer */}
           <span className="mt-3"></span>
 
-          <div className="flex flex-col space-y-12 w-full justify-center items-center">
-            <div className="flex flex-col sm:w-[60%] py-4 px-3 bg-gray-500 ">
+          <div className="flex flex-col space-y-12 font-thin w-full justify-center items-center">
+            <div className="flex flex-col sm:w-[60%]  text-white py-4 px-3 bg-[#404040] rounded-lg">
               <div className="justify-between  flex">
-                <div className="bg-red-50 w-2/6 flex justify-center font-medium sm:font-normal text-sm sm:text-xl items-center">
+                <div className=" w-2/6 flex justify-center font-medium sm:font-normal text-sm sm:text-xl items-center">
                   Développeur full-stack
                 </div>
-                <div className="bg-green-50 w-3/6 flex justify-center space-x-4 items-center">
-                  <div className="bg-red-600 justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
+                <div className=" w-3/6 flex justify-center space-x-4 items-center">
+                  <div className="bg-[#F2B749] justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
                     A DISTANCE
                   </div>
-                  <div className="bg-red-600 justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
+                  <div className=" bg-[#F2B749] justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
                     TEMPS PLEIN
                   </div>
                 </div>
-                <div className="bg-violet-50 w-1/6 flex justify-end items-center pr-2 sm:pr-6">
+                <div className=" w-1/6 flex justify-end items-center pr-2 sm:pr-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -101,20 +121,20 @@ export default function Seven() {
               )}
             </div>
             {/***** */}
-            <div className="flex flex-col sm:w-[60%] py-4 px-3 bg-gray-500 ">
+            <div className="flex flex-col sm:w-[60%] text-white py-4 px-3 bg-[#404040] rounded-lg">
               <div className="justify-between  flex">
-                <div className="bg-red-50 w-2/6 flex justify-center font-medium sm:font-normal text-sm sm:text-xl items-center">
+                <div className=" w-2/6 flex justify-center font-medium sm:font-normal text-sm sm:text-xl items-center">
                   Développeur full-stack
                 </div>
-                <div className="bg-green-50 w-3/6 flex justify-center space-x-4 items-center">
-                  <div className="bg-red-600 justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
+                <div className=" w-3/6 flex justify-center space-x-4 items-center">
+                  <div className="bg-[#F2B749] justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
                     A DISTANCE
                   </div>
-                  <div className="bg-red-600 justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
+                  <div className=" bg-[#F2B749] justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
                     TEMPS PLEIN
                   </div>
                 </div>
-                <div className="bg-violet-50 w-1/6 flex justify-end items-center pr-2 sm:pr-6">
+                <div className=" w-1/6 flex justify-end items-center pr-2 sm:pr-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -156,20 +176,20 @@ export default function Seven() {
               )}
             </div>
             {/***** */}
-            <div className="flex flex-col sm:w-[60%] py-4 px-3 bg-gray-500 ">
+            <div className="flex flex-col sm:w-[60%] text-white py-4 px-3 bg-[#404040] rounded-lg">
               <div className="justify-between  flex">
-                <div className="bg-red-50 w-2/6 flex justify-center font-medium sm:font-normal text-sm sm:text-xl items-center">
+                <div className=" w-2/6 flex justify-center font-medium sm:font-normal text-sm sm:text-xl items-center">
                   Développeur full-stack
                 </div>
-                <div className="bg-green-50 w-3/6 flex justify-center space-x-4 items-center">
-                  <div className="bg-red-600 justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
+                <div className=" w-3/6 flex justify-center space-x-4 items-center">
+                  <div className="bg-[#F2B749] justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
                     A DISTANCE
                   </div>
-                  <div className="bg-red-600 justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
+                  <div className=" bg-[#F2B749] justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
                     TEMPS PLEIN
                   </div>
                 </div>
-                <div className="bg-violet-50 w-1/6 flex justify-end items-center pr-2 sm:pr-6">
+                <div className=" w-1/6 flex justify-end items-center pr-2 sm:pr-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -211,20 +231,20 @@ export default function Seven() {
               )}
             </div>
             {/***** */}
-            <div className="flex flex-col sm:w-[60%] py-4 px-3 bg-gray-500 ">
+            <div className="flex flex-col sm:w-[60%] text-white py-4 px-3 bg-[#404040] rounded-lg">
               <div className="justify-between  flex">
-                <div className="bg-red-50 w-2/6 flex justify-center font-medium sm:font-normal text-sm sm:text-xl items-center">
+                <div className=" w-2/6 flex justify-center font-medium sm:font-normal text-sm sm:text-xl items-center">
                   Développeur full-stack
                 </div>
-                <div className="bg-green-50 w-3/6 flex justify-center space-x-4 items-center">
-                  <div className="bg-red-600 justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
+                <div className=" w-3/6 flex justify-center space-x-4 items-center">
+                  <div className="bg-[#F2B749] justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
                     A DISTANCE
                   </div>
-                  <div className="bg-red-600 justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
+                  <div className=" bg-[#F2B749] justify-center text-xs sm:text-base items-center flex w-[90px] sm:w-[120px] h-[35px] sm:h-[50px] rounded-lg">
                     TEMPS PLEIN
                   </div>
                 </div>
-                <div className="bg-violet-50 w-1/6 flex justify-end items-center pr-2 sm:pr-6">
+                <div className=" w-1/6 flex justify-end items-center pr-2 sm:pr-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -272,7 +292,7 @@ export default function Seven() {
       {/* Message  */}
       <div className="flex text-black mt-32 items-center text-center justify-center w-full flex-col pb-16 sm:pb-44 font-medium sm:font-base sm:text-4xl leading-6 sm:leading-[50px]">
         <span>Vous ne voyez pas un rôle qui vous convient</span>
-        <span className="underline underline-offset-6">
+        <span className="underline underline-offset-6 text-[#E5964D]">
           Envoyez nous votre cv de toute façon !
         </span>
         <span>Nous aimerions avoir de vos nouvelles</span>

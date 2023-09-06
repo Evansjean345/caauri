@@ -1,10 +1,10 @@
-import React from 'react'
-import SectionHome from '../components/SectionHome'
+import React from "react";
+import SectionHome from "../components/SectionHome";
 
 export default function Home() {
   return (
     <div>
-        <SectionHome/> 
+      <SectionHome />
     </div>
-  )
+  );
 }

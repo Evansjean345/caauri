@@ -12,6 +12,7 @@ import Page_three from "./pages/Page_three";
 import Page_two from "./pages/Page_two";
 import Page_Seven from "./pages/Page_Seven";
 import Contact_page from "./pages/Contact_page";
+import Navbar from "./Navbar";
 // ..
 AOS.init();
 
@@ -39,31 +40,33 @@ AOS.init({
 });
 
 function App() {
-  const [loader, setLoader] = useState(true);
+  const [menu, setMenu] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoader(false);
-    }, 3000);
-  }, []);
-  return loader ? (
-    <div className="h-[100vh] bg-black flex items-center justify-center">
-      <img src="/images/logo.png" alt="" className="h-64 animate-bounce bg-black" />
-    </div>
-  ) : (
-    <div className="App m-0 p-0 bg-white">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/anime" element={<Anime_page />} />
-        <Route path="/page_two" element={<Page_two />} />
-        <Route path="/page_three" element={<Page_three />} />
-        <Route path="/page_four" element={<Page_Four />} />
-        <Route path="/page_five" element={<Page_five />} />
-        <Route path="/page_six" element={<Page_six />} />
-        <Route path="/page_seven" element={<Page_Seven />} />
-        <Route path="/contact" element={<Contact_page />} />
-      </Routes>
-    </div>
+  const handleMenuChange = (newMenuValue) => {
+    setMenu(newMenuValue);
+  };
+
+  return (
+    <>
+      <Navbar onMenuChange={handleMenuChange} />
+      <div
+        className={
+          menu ? "App m-0 p-0 bg-white " : "blur-[7.5px] App m-0 p-0 bg-white "
+        }
+      >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/anime" element={<Anime_page />} />
+          <Route path="/page_two" element={<Page_two />} />
+          <Route path="/page_three" element={<Page_three />} />
+          <Route path="/page_four" element={<Page_Four />} />
+          <Route path="/page_five" element={<Page_five />} />
+          <Route path="/page_six" element={<Page_six />} />
+          <Route path="/page_seven" element={<Page_Seven />} />
+          <Route path="/contact" element={<Contact_page />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

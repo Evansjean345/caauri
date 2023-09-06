@@ -50,7 +50,12 @@ export default function Four() {
     <div className="bg-white text-black">
       {/* first Section */}
       <div className="w-full">
-        <p className="w-full px-4 text-black xl:px-0 pt-44 sm:pt-56 flex items-center justify-center text-xl font-semibold sm:font-normal sm:text-4xl md:text-5xl lg:text-6xl  xl:text-7xl">
+        <p
+          data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="w-full px-4 xl:font-semibold font-bold text-black xl:px-0 pt-44 sm:pt-56 flex items-center justify-center text-xl  sm:text-4xl md:text-5xl lg:text-6xl  xl:text-7xl"
+        >
           CAAURI CONSULTING :
           <br />
           plateforme de gestions interne des
@@ -59,7 +64,12 @@ export default function Four() {
         </p>
         <div className="flex w-full md:mt-20 mt-8">
           <div className="w-1/2 hidden md:block"></div>
-          <div className="w-full md:px-0 px-8 md:pl-0 sm:px-24 md:w-1/2 text-sm md:text-xl md:pr-32 text-black">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="2000"
+            className="w-full md:px-0 px-8 md:pl-0 sm:px-24 md:w-1/2 text-sm md:text-xl md:pr-32 text-black"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
             illo dolor debitis accusantium maiores sunt nulla odit aliquam sit
             perferendis, tempora voluptatum pariatur sapiente cum excepturi fuga
@@ -76,7 +86,12 @@ export default function Four() {
           className="w-full max-w-full h-auto ml-auto mr-auto block"
         />
       </div>
-      <div className="w-full flex flex-col xl:flex-row justify-between mt-10">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-easing="linear"
+        data-aos-duration="3000"
+        className="w-full flex flex-col xl:flex-row justify-between mt-10"
+      >
         <div className="xl:w-[45%] px-8 sm:px-12 w-full  text-black xl:px-44 flex flex-col justify-center  font-semibold text-xl sm:text-2xl">
           <p>Caauri consulting</p>
           <span className="sm:text-base font-normal text-xs mt-2 sm:mt-4">
@@ -152,7 +167,12 @@ export default function Four() {
         </div>
       </div>
       {/* Caroussel section */}
-      <div className="w-full text-black flex-col flex items-center justify-center mt-28 ">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-easing="linear"
+        data-aos-duration="3000"
+        className="w-full text-black flex-col flex items-center justify-center mt-28 "
+      >
         <span className="2xl:text-7xl px-8 md:text-3xl lg:px-8 font-bold 2xl:font-normal text-xl w-full text-start font-meduim lg:text-center">
           CE QUE LE CLIENT A DIT
         </span>
@@ -201,20 +221,20 @@ export default function Four() {
         >
           {items.map((item) => (
             <div
-              className={`carousel-item flex group rounded-lg  transition-transform flex-col w-[420px] h-[470px] sm:px-8 relative`}
+              className={`carousel-item flex group rounded-lg  transition-transform flex-col w-[300px] sm:w-[420px] h-[470px] sm:px-8 relative`}
             >
               <img
                 src={item.imgSource}
                 alt=""
-                className="w-full z-30 h-full rounded-lg cursor-pointer  group-hover:scale-95 transition-all"
+                className="w-full z-30  max-w-full h-full ml-auto mr-auto block rounded-lg cursor-pointer  group-hover:scale-95 transition-all "
               />
               <span className="z-40 top-10 left-12 sm:left-16 absolute cursor-pointer group-hover:scale-75 transition-all bg-white w-[150px] h-[50px] flex items-center justify-center rounded-full border border-black">
                 {item.title}
               </span>
-              <span className="font-semibold px-10 sm:px-0 text-xl mt-6">
+              <span className="font-semibold px-4 sm:px-0 text-xl mt-6">
                 Caauri consulting
               </span>
-              <p className="mt-2 sm:text-base px-10 sm:px-0 text-xs font-normal">
+              <p className="mt-2 sm:text-base pl-4 sm:px-0 text-xs font-normal">
                 {item.content}
               </p>
             </div>

@@ -1,18 +1,15 @@
 import React, { useRef, useState, useEffect } from "react";
-import Navbar from "../Navbar";
 import Footer from "./Footer";
 import "../style.css";
 import Prefooter from "./Prefooter";
 import "../style.css";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function SectionHome() {
-  const [menu, setMenu] = useState(true);
-
-  const handleMenuChange = (newMenuValue) => {
-    setMenu(newMenuValue);
-  };
-
+  //animation Mobile Page d'Acceuil
   const elements = useRef([]);
 
   useEffect(() => {
@@ -27,21 +24,102 @@ export default function SectionHome() {
     });
   }, []);
 
+  // scroll section animation
+
+  const [tilt, setTilt] = useState(0);
+  const imageRef1 = useRef(null);
+  const imageRef2 = useRef(null);
+  const imageRef3 = useRef(null);
+  const imageRef4 = useRef(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const mouseX = e.clientX;
+      const maxTilt = 20;
+      const minTilt = -20;
+      const tiltRange = maxTilt - minTilt;
+
+      const newTilt = (
+        (mouseX / window.innerWidth) * tiltRange +
+        minTilt
+      ).toFixed(2);
+
+      setTilt(newTilt);
+    };
+
+    const image1 = imageRef1.current;
+    const image2 = imageRef2.current;
+    const image3 = imageRef3.current;
+    const image4 = imageRef4.current;
+
+    // Ajoutez l'événement de la souris pour écouter le mouvement
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      // Nettoyez l'événement lorsque le composant est démonté
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  useEffect(() => {
+    const image1 = imageRef1.current;
+    const image2 = imageRef2.current;
+    const image3 = imageRef3.current;
+    const image4 = imageRef4.current;
+
+    // Animez l'image en fonction de l'inclinaison
+    gsap.to(image1, { rotation: tilt, duration: 0.3, ease: "none" });
+    gsap.to(image2, { rotation: tilt, duration: 0.3, ease: "none" });
+    gsap.to(image3, { rotation: tilt, duration: 0.3, ease: "none" });
+    gsap.to(image4, { rotation: tilt, duration: 0.3, ease: "none" });
+  }, [tilt]);
+
+  // animation Partie Porfolio
+  const sectionRef = useRef(null);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const element = elementRef.current;
+
+    //animation au scroll
+    const animation = gsap.timeline({
+      scrollTrigger: {
+        trigger: section,
+        start: "bottom center",
+        end: "top center",
+        scrub: true,
+      },
+    });
+
+    gsap.to(element, {
+      y: -610, // Ajustez la valeur pour correspondre à votre position spécifiée
+      opacity: 0.2,
+      duration: 0.4,
+      scrollTrigger: {
+        trigger: section,
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+      },
+    });
+  }, []);
+
   return (
     <div>
-      <Navbar onMenuChange={handleMenuChange} />
-      <div
-        className={
-          menu ? "bg-white text-black" : "blur-[7.5px] bg-white text-black"
-        }
-      >
+      <div className="bg-white text-black px-2 sm:px-0">
         {/* Acceuil */}
         <div
-          className={"flex w-full flex-shrink pt-32 sm:pt-64"}
+          className={"flex w-full flex-shrink pt-32 lg:pt-20"}
           id="caauri_home_section"
         >
           <div className="caauri_div_home w-[60%] flex flex-col justify-center pl-6 lg:pl-6 md:pl-12  2xl:pl-28 bg-white">
-            <p className="xl:font-semibold font-bold text-4xl md:text-6xl  sm:text-5xl xl:text-7xl xl:leading-[85px]">
+            <p
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              className="xl:font-semibold font-bold text-4xl md:text-6xl  sm:text-5xl xl:text-7xl xl:leading-[85px]"
+            >
               Une image de marque
               <br />
               qui attire réellement
@@ -50,14 +128,24 @@ export default function SectionHome() {
             </p>
             {/* Remove div */}
             <div className="remove_div">
-              <p className="mt-8 text-xs sm:text-base">
+              <p
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1600"
+                className="mt-8 text-xs sm:text-[24px] sm:leading-[35px]"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                 aspernatur consequatur blanditiis accusamus fugit iste
                 laboriosam quis? Beatae quidem accusantium ut id voluptas velit
                 fuga provident optio, laudantium blanditiis veniam?
               </p>
               <span>
-                <div className="mt-8 cursor-pointer flex w-[180px] gap-5 py-4 hover:flex hover:items-center hover:justify-center hover:gap-0 hover:bg-black  transition-all px-2   hover:text-white hover:rounded-l-full hover:rounded-r-full">
+                <div
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1700"
+                  className="mt-8 sm:font-medium  cursor-pointer flex w-[180px] gap-5 py-4 hover:flex hover:items-center hover:justify-center hover:gap-0 hover:bg-black  transition-all px-2   hover:text-white hover:rounded-l-full hover:rounded-r-full"
+                >
                   <div>Caaurimuniquez</div>
                   <div className="bg-black rounded-b-full w-6  transition-all flex items-center justify-center rounded-l-full">
                     <img src="/logo/frame.svg" alt="" />
@@ -74,7 +162,10 @@ export default function SectionHome() {
               src="/logo/new_logo.png"
               alt=""
               id="logo_wide"
-              className="md:h-[729px] h-[400px] w-[390px] hidden sm:block"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1900"
+              className="md:h-[500px] h-[400px] w-[300px] hidden sm:block"
             />
             <img
               src="/logo/caauri_white.png"
@@ -109,14 +200,14 @@ export default function SectionHome() {
           </div>
           {/* Visible_div */}
           <div className="visible_div hidden  px-8">
-            <p className="mt-8 text-xs sm:text-base">
+            <p className="mt-8 text-xs sm:text-[24px] sm:leading-[35px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               aspernatur consequatur blanditiis accusamus fugit iste laboriosam
               quis? Beatae quidem accusantium ut id voluptas velit fuga
               provident optio, laudantium blanditiis veniam?
             </p>
             <span>
-              <div className="mt-8 flex w-[180px] gap-5 py-4 hover:flex hover:items-center hover:justify-center hover:gap-0 hover:bg-black  transition-all px-2   hover:text-white hover:rounded-l-full hover:rounded-r-full">
+              <div className="mt-8 sm:font-medium flex w-[180px] gap-5 py-4 hover:flex hover:items-center hover:justify-center hover:gap-0 hover:bg-black  transition-all px-2   hover:text-white hover:rounded-l-full hover:rounded-r-full">
                 <div>Caaurimuniquez</div>
                 <div className="bg-black rounded-b-full w-6  transition-all flex items-center justify-center rounded-l-full">
                   <img src="/logo/frame.svg" alt="" />
@@ -445,11 +536,13 @@ export default function SectionHome() {
               src="icon/item_left_one.jpg"
               alt=""
               className="h-16 sm:h-24  lg:h-full"
+              ref={imageRef1}
             />
             <img
               src="icon/item_right_one.jpg"
               alt=""
               className="h-16 sm:h-24  lg:h-full"
+              ref={imageRef2}
             />
           </div>
           <div className="flex flex-col my-6 sm:my-12 lg:my-6 px-12 items-center justify-center">
@@ -478,16 +571,21 @@ export default function SectionHome() {
               src="icon/item_left_two.jpg"
               alt=""
               className="h-16 sm:h-24  lg:h-full"
+              ref={imageRef3}
             />
             <img
               src="icon/item_right_two.jpg"
               alt=""
               className="h-16 sm:h-24  lg:h-full"
+              ref={imageRef4}
             />
           </div>
         </div>
         {/* Portfolio */}
-        <div className="w-full mt-32 h-[1037px] bg-black overflow-hidden flex-col flex items-center justify-center relative">
+        <div
+          ref={sectionRef}
+          className="w-full mt-32 h-[1037px] bg-black overflow-hidden flex-col flex items-center justify-center relative"
+        >
           <span className="text-white lg:text-4xl text-xl z-20 font-normal">
             PORTFOLIO
           </span>
@@ -515,6 +613,7 @@ export default function SectionHome() {
           <img
             src="/images/pc.png"
             alt=""
+            ref={elementRef}
             className="absolute lg:bottom-0 bottom-[610px] left-12 opacity-40 lg:left-0 lg:w-[350px] lg:h-[250px] w-[113px] h-[103px] sm:h-[213px] sm:w-[203px]  z-10"
           />
           <img

@@ -99,25 +99,29 @@ export default function Navbar({ onMenuChange }) {
             </svg>
           </div>
         </div>
-        <div className="mt-16 px-2 sm:px-12 flex flex-col">
+        <div className="mt-16 px-8 sm:px-12 flex flex-col">
           <ul>
-            <li className="text-3xl font-base sm:font-semibold">Accueil</li>
-            <li className="text-3xl font-thin sm:font-semibold mt-2">
+            <li className="sm:text-3xl text-5xl font-thin sm:font-semibold sm:hover:text-4xl transition-all cursor-pointer">
+              Accueil
+            </li>
+            <li className="sm:text-3xl text-5xl font-thin sm:font-semibold mt-6 sm:mt-2 sm:hover:text-4xl transition-all cursor-pointer">
               Caaurimuquez
             </li>
-            <li className="text-3xl font-thin sm:font-semibold mt-2">
+            <li className="sm:text-3xl text-5xl font-thin sm:font-semibold mt-6 sm:mt-2 sm:hover:text-4xl transition-all cursor-pointer">
               Portfolio
             </li>
-            <li className="text-3xl font-thin sm:font-semibold mt-2">Blog</li>
-            <li className="text-3xl font-thin sm:font-semibold mt-2">
+            <li className="sm:text-3xl text-5xl font-thin sm:font-semibold mt-6 sm:mt-2 sm:hover:text-4xl transition-all cursor-pointer">
+              Blog
+            </li>
+            <li className="sm:text-3xl text-5xl font-thin sm:font-semibold mt-6 sm:mt-2 sm:hover:text-4xl transition-all cursor-pointer">
               Carriere
             </li>
-            <li className="text-3xl font-thin sm:font-semibold mt-2">
+            <li className="sm:text-3xl text-5xl font-thin sm:font-semibold mt-6 sm:mt-2 sm:hover:text-4xl transition-all cursor-pointer">
               Contact
             </li>
           </ul>
         </div>
-        <div className="bg-white mt-20 flex w-full">
+        <div className="bg-white pl-8 sm:pl-0 mt-20 flex w-full">
           <div className="w-1/2 flex sm:justify-end flex-col justify-start   sm:items-center">
             <span>
               <div className="mt-8 cursor-pointer flex w-[200px] gap-1 py-4 hover:flex hover:items-center hover:justify-center hover:gap-0 hover:bg-black  transition-all px-2   hover:text-white hover:rounded-l-full hover:rounded-r-full">

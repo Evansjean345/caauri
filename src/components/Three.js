@@ -6,13 +6,15 @@ export default function Three() {
   return (
     <div className="bg-white text-black">
       {/* Heading */}
-      <div className="flex justify-center text-center text-5xl w-full px-6 sm:px-0 lg:text-8xl py-32 flex-col items-center">
+      <div className="flex justify-center font-semibold text-center text-5xl w-full px-6 sm:px-0 lg:text-8xl py-32 flex-col items-center">
         <p>
-          <span>Les</span>&nbsp;<span>travaux</span>&nbsp;
+          <span>Les</span>&nbsp;<span className="text-[#F2B749]">travaux</span>
+          &nbsp;
           <span>que nous avons</span>
         </p>
         <p>
-          <span>réalisés</span>&nbsp;<span>jusqu'à présent</span>
+          <span className="text-[#F2B749]">réalisés</span>&nbsp;
+          <span>jusqu'à présent</span>
         </p>
       </div>
       {/* button section computer version */}
@@ -22,22 +24,22 @@ export default function Three() {
         </span>
         <ul className="lg:flex space-x-6 mt-3 list-outside hidden">
           <li>
-            <div className="bg-black font-medium text-white w-[170px] flex items-center justify-center h-[60px] rounded-full text-xl">
+            <div className="bg-black hover:border hover:border-black hover:bg-white hover:text-black transition-all cursor-pointer font-medium text-white w-[170px] flex items-center justify-center h-[60px] rounded-full text-xl">
               Tous les projets
             </div>
           </li>
           <li>
-            <div className="border-black font-medium text-black border w-[170px] flex items-center justify-center h-[60px] rounded-full text-xl">
+            <div className="border-black hover:text-white hover:bg-black hover:border-white cursor-pointer transition-all font-medium text-black border w-[170px] flex items-center justify-center h-[60px] rounded-full text-xl">
               Stratégie
             </div>
           </li>
           <li>
-            <div className="border-black font-medium text-black border w-[170px] flex items-center justify-center h-[60px] rounded-full text-xl">
+            <div className="border-black font-medium  hover:text-white hover:bg-black hover:border-white cursor-pointer transition-all  text-black border w-[170px] flex items-center justify-center h-[60px] rounded-full text-xl">
               Branding
             </div>
           </li>
           <li>
-            <div className="border-black font-medium text-black border w-[170px] flex items-center justify-center h-[60px] rounded-full text-xl">
+            <div className="border-black  hover:text-white hover:bg-black hover:border-white cursor-pointer transition-all  font-medium text-black border w-[170px] flex items-center justify-center h-[60px] rounded-full text-xl">
               Digital
             </div>
           </li>
