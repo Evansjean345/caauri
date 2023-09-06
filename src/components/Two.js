@@ -85,7 +85,7 @@ export default function Two() {
           />
         </div>
       </div>
-      {/** Four section */}
+      {/** Three section */}
       <div className="bg-black h-[100vh] sm:h-[140vh]">
         <div className="flex justify-between sm:px-12 px-3 py-12">
           <div className="flex flex-col justify-center items-center">
@@ -141,11 +141,11 @@ export default function Two() {
           </div>
         </div>
       </div>
-      {/* Five Section */}
-      <div className="sm:h-[120vh] h-[100vh] mt-20">
+      {/* Four Section */}
+      <div className="sm:h-[120vh] h-[110vh] mt-20">
         <div className="flex sm:flex-row flex-col">
           <div className="sm:w-1/2 flex flex-col">
-            <span className="px-8 text-black text-2xl font-semibold sm:font-semibold sm:text-4xl md:text-5xl lg:text-6xl  xl:text-8xl">
+            <span className="px-8 text-black xl:font-semibold font-bold text-4xl md:text-6xl  sm:text-5xl xl:text-7xl xl:leading-[85px]">
               Web & <br />
               Développement
             </span>
@@ -276,7 +276,9 @@ export default function Two() {
       </div>
       {/* Section 4 */}
       <div className="w-full h-[70vh] bg-gradient-to-r from-black  sm:h-[70vh] flex flex-col items-start justify-start sm:mt-44 mt-20 px-8 sm:px-0 sm:pl-20">
-        <span className="xl:font-semibold font-bold text-4xl md:text-6xl  text-[#F99B40] sm:text-5xl xl:text-8xl xl:leading-[85px] pt-12">Event pro</span>
+        <span className="xl:font-semibold font-bold text-4xl md:text-6xl  text-[#F99B40] sm:text-5xl xl:text-8xl xl:leading-[85px] pt-12">
+          Event pro
+        </span>
         <p className="flex justify-start items-start text-start mt-8 sm:w-[450px] text-white text-sm sm:text-xl">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
           provident vero suscipit perspiciatis nesciunt nam? Repellendus dolorum
